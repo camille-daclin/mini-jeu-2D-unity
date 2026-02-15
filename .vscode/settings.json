@@ -67,5 +67,5 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "lifprojet.slnx"
+    "dotnet.defaultSolution": "LIFPROJET.slnx"
 }
