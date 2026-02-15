@@ -11606,6 +11606,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1013279933}
+  - component: {fileID: 1013279934}
   m_Layer: 0
   m_Name: Ennemi
   m_TagString: Untagged
@@ -11631,6 +11632,18 @@ Transform:
   - {fileID: 973099473}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1013279934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1013279932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 436aede8c6586f945b200f24498af6ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!1 &1731972995
 GameObject:
   m_ObjectHideFlags: 0
