@@ -4,6 +4,8 @@ public class EnemyPatrol : MonoBehaviour
 {
     public float speed;
     public Transform[] waypoints;
+
+    public int damageOnCollision = 20;
     public SpriteRenderer graphics;
     private Transform target;
     private int destPoint = 0;
@@ -12,16 +14,37 @@ public class EnemyPatrol : MonoBehaviour
         target = waypoints[0];
     }
 
-    void Update()
-    {
-        Vector3 dir = target.position - transform.position;
-        transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World); //Normalise pour que le vecteur ait tjrs la même taille
-
-        if(Vector3.Distance(transform.position, target.position) < 0.3f) //distance entre deux entité, si l'ennemi est arrivé à sa dest alors
+    void Update(){
+        //Pour le debug
+        if (target == null) 
         {
-            destPoint = (destPoint + 1) % waypoints.Length; //Si il a fait tout les point, on reprend du début (grâce au %)
+            Debug.LogError("target est NULL");
+            return;
+        }
+        if (graphics == null)
+        {
+            Debug.LogError("graphics est NULL");
+            return;
+        }
+
+        Vector3 dir = target.position - transform.position;
+        transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);
+
+        //si le serpent est quasi arrivé à destination
+        if(Vector3.Distance(transform.position, target.position) < 0.3f)
+        {
+            destPoint = (destPoint + 1) % waypoints.Length;
             target = waypoints[destPoint];
             graphics.flipX = !graphics.flipX;
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.transform.CompareTag("Player"))
+        {
+            PlayerHealth playerHealth = collision.transform.GetComponent<PlayerHealth>();
+            playerHealth.TakeDamage(damageOnCollision);
         }
     }
 }
