@@ -680,3 +680,19 @@ Memory consumption went from 155.8 MB to 151.5 MB.
 Total: 12.632400 ms (FindLiveObjects: 0.779800 ms CreateObjectMapping: 1.026800 ms MarkObjects: 7.697900 ms  DeleteObjects: 3.126200 ms)
 
 Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 72.090998 seconds.
+  path: Assets/Prefabs/Ennemi.prefab
+  artifactKey: Guid(aecd501f903a84241be1f7605b1adf1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Ennemi.prefab using Guid(aecd501f903a84241be1f7605b1adf1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7a9b07ce29fe6b2b076e8811162bbb69') in 0.422018 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 26
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.814563 seconds.
+  path: Assets/Prefabs/Player.prefab
+  artifactKey: Guid(a3a43883487567d4d93ac26cf128db4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player.prefab using Guid(a3a43883487567d4d93ac26cf128db4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c9c6c183eb9dcb8f40a14d92e74b315f') in 0.0431896 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 27
+
