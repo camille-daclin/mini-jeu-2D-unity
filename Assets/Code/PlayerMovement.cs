@@ -20,7 +20,6 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        estSol = Physics2D.OverlapCircle(GroundCheck.position, groundCheckRadius, collisionLayer); //Verification Perso au sol
         horizontalMovement = Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;
 
         if (Input.GetButtonDown("Jump") && estSol)
@@ -36,6 +35,7 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
+        estSol = Physics2D.OverlapCircle(GroundCheck.position, groundCheckRadius, collisionLayer); //Verification Perso au sol
         movePlayer(horizontalMovement);
     }
 
