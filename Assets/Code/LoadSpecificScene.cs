@@ -9,7 +9,7 @@ public class LoadSpecificScene : MonoBehaviour
 
     private void Awake()
     {
-        fadeSystem = GameObject.FindGameObjectWithTag("FadeSystem").GetComponent<Animator>();
+        fadeSystem = GameObject.FindGameObjectWithTag("FadeSystem").GetComponent<Animator>(); //On recupère l'animator dès qu'on change de scène pour faire le fade
     }
     private void OnTriggerEnter2D (Collider2D collision)
     {
