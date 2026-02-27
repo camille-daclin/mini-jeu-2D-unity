@@ -44,9 +44,9 @@ public class PlayerHealth : MonoBehaviour
     {
         while (isInvicible)
         {
-            graphics.color = new Color (1f, 1f, 1f, 0f); //On met alpho à 0 pour rendre Gaston transparent
+            graphics.color = new Color (1f, 1f, 1f, 0f); //On met alpha à 0 pour rendre Gaston transparent
             yield return new WaitForSeconds(invicibilityFlashDelay);
-            graphics.color = new Color (1f, 1f, 1f, 1f); //On met alpho à 1 pour rendre Gaston apparent
+            graphics.color = new Color (1f, 1f, 1f, 1f); //On met alpha à 1 pour rendre Gaston apparent
             yield return new WaitForSeconds(invicibilityFlashDelay);            
         }
     }
