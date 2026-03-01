@@ -8,7 +8,7 @@ public class DeathZone : MonoBehaviour
 
     private void Awake()
     {
-        spawnPlayer = GameObject.FindGameObjectWithTag("SpawnPlayer").transform;
+        spawnPlayer = GameObject.FindGameObjectWithTag("SpawnPlayer").transform; //On stocke la position, pour que ça coute moins cher
         fadeSystem = GameObject.FindGameObjectWithTag("FadeSystem").GetComponent<Animator>();
     }
 
