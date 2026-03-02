@@ -3,6 +3,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed;
+    public float climbSpeed;
     public Rigidbody2D rb;
     public Animator animator;
     public SpriteRenderer spriteRenderer;
@@ -10,17 +11,21 @@ public class PlayerMovement : MonoBehaviour
 
     private bool isJumping;
     private bool estSol;
+    [HideInInspector]
+    public bool isClimbing;
     public Transform GroundCheck;
     public float groundCheckRadius;
     public LayerMask collisionLayer;
 
     private Vector3 velocity = Vector3.zero;
     private float horizontalMovement;
+    private float verticalMovement;
 
 
     void Update()
     {
         horizontalMovement = Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;
+        verticalMovement = Input.GetAxis("Vertical") * climbSpeed * Time.deltaTime; //On récupère le mouvement vertical
 
         if (Input.GetButtonDown("Jump") && estSol)
         {
@@ -31,24 +36,35 @@ public class PlayerMovement : MonoBehaviour
 
         float characterVelocity = Mathf.Abs(rb.linearVelocity.x);
         animator.SetFloat("Speed", characterVelocity);
+        animator.SetBool("isClimbing", isClimbing);
     }
 
     void FixedUpdate()
     {
         estSol = Physics2D.OverlapCircle(GroundCheck.position, groundCheckRadius, collisionLayer); //Verification Perso au sol
-        movePlayer(horizontalMovement);
+        MovePlayer(horizontalMovement, verticalMovement);
     }
 
-    void movePlayer(float _horizontalMovement)
+    void MovePlayer(float _horizontalMovement, float _verticalMovement)
     {
-        Vector3 targetVelocity = new Vector2(_horizontalMovement, rb.linearVelocity.y);
-        rb.linearVelocity = Vector3.SmoothDamp(rb.linearVelocity, targetVelocity, ref velocity, .05f);
-
-        if(isJumping == true)
+        if (!isClimbing)
         {
-            rb.AddForce(new Vector2(0f,jumpForce));
-            isJumping = false;
+            Vector3 targetVelocity = new Vector2(_horizontalMovement, rb.linearVelocity.y);
+            rb.linearVelocity = Vector3.SmoothDamp(rb.linearVelocity, targetVelocity, ref velocity, .05f);
+
+            if(isJumping)
+            {
+                rb.AddForce(new Vector2(0f,jumpForce));
+                isJumping = false;
+            }
         }
+        else
+        {
+            //Déplacement vertical
+            Vector3 targetVelocity = new Vector2(0, _verticalMovement);
+            rb.linearVelocity = Vector3.SmoothDamp(rb.linearVelocity, targetVelocity, ref velocity, .05f);
+        }
+       
     }
 
     void Flip(float _velocity)

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - FadeSystem
   - SpawnPlayer
+  - InteractUI
   layers:
   - Default
   - TransparentFX

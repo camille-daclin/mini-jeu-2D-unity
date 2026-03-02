@@ -1,11 +1,11 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.3/respin/6000.3.6f1-732c1ec89f18' branch; Version is '6000.3.6f1 (bbb010bdb8a3) revision 12300304'; Using compiler version '194234433'; Build Type 'Release'
 OS: 'Windows 11  (10.0.26200) Core' Language: 'fr' Physical Memory: 15791 MB
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-camil" at "2026-03-01T21:24:05.2541456Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-camil" at "2026-03-01T22:19:44.2146387Z"
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 System  architecture: x64
 Process architecture: x64
-Date: 2026-03-01T21:24:05Z
+Date: 2026-03-01T22:19:44Z
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.3.6f1\Editor\Unity.exe
@@ -19,7 +19,7 @@ C:/Users/camil/LIFPROJET
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-62827
+62496
 -licensingIpc
 LicenseClient-camil
 -job-worker-count
@@ -67,12 +67,12 @@ C:/Users/camil/LIFPROJET
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
     "memorysetup-temp-allocator-size-cloud-worker=32768"
-Player connection [28640]  Target information:
+Player connection [24444]  Target information:
 
-Player connection [28640]  * "[IP] 192.168.1.186 [Port] 0 [Flags] 2 [Guid] 3172562390 [EditorId] 3172562390 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-5MO2GFU6) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [24444]  * "[IP] 192.168.1.186 [Port] 0 [Flags] 2 [Guid] 1864684632 [EditorId] 1864684632 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-5MO2GFU6) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [28640] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [28640] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [24444] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [24444] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 7
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -84,7 +84,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 4.39 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 306.24 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.3.6f1 (bbb010bdb8a3)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.3.6f1/Editor/Data/Resources/UnitySubsystems
@@ -100,73 +100,71 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.3.6f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.3.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.3.6f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56504
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56716
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.6f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004620 seconds.
-- Loaded All Assemblies, in  0.605 seconds
+Registered in 0.005631 seconds.
+- Loaded All Assemblies, in  1.111 seconds
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.672 seconds
-Domain Reload Profiling: 1271ms
-	BeginReloadAssembly (194ms)
+- Finished resetting the current domain, in  0.978 seconds
+Domain Reload Profiling: 2082ms
+	BeginReloadAssembly (433ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (55ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (80ms)
-	LoadAllAssembliesAndSetupDomain (256ms)
-		LoadAssemblies (188ms)
+	RebuildCommonClasses (81ms)
+	RebuildNativeTypeToScriptingClass (33ms)
+	initialDomainReloadingComplete (100ms)
+	LoadAllAssembliesAndSetupDomain (456ms)
+		LoadAssemblies (417ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (252ms)
-			TypeCache.Refresh (248ms)
-				TypeCache.ScanAssembly (231ms)
+		AnalyzeDomain (450ms)
+			TypeCache.Refresh (448ms)
+				TypeCache.ScanAssembly (413ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (673ms)
+	FinalizeReload (979ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (612ms)
+		SetupLoadedEditorAssemblies (882ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (79ms)
-			SetLoadedEditorAssemblies (7ms)
-			BeforeProcessingInitializeOnLoad (168ms)
-			ProcessInitializeOnLoadAttributes (261ms)
-			ProcessInitializeOnLoadMethodAttributes (97ms)
+			InitializePlatformSupportModulesInManaged (108ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (247ms)
+			ProcessInitializeOnLoadAttributes (387ms)
+			ProcessInitializeOnLoadMethodAttributes (134ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (0ms)
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.17.4+4293ba1
+  Session Id:              748ff14bb9c2478eb5e4d042a021a337
+  Correlation Id:          39393dce42f3a1a5a2ba3363b95f6fa0
+  External correlation Id: 2256110303871305897
+  Machine Id:              2nl+feNEU9ulJtAynWAT6KeZHvY=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-camil" (connect: 0.00s, validation: 0.00s, handshake: 4.18s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-camil-notifications" at "2026-03-01T22:19:48.3978715Z"
+[Licensing::Module] Licensing Background thread has ended after 4.18s
 ========================================================================
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
-[Licensing::Module] Licensing is not yet initialized.
-[Licensing::Client] Handshaking with LicensingClient:
-  Version:                 1.17.4+4293ba1
-  Session Id:              ff5661260d3c4988bfaf9351c0110d8c
-  Correlation Id:          39393dce42f3a1a5a2ba3363b95f6fa0
-  External correlation Id: 1215747558059341869
-  Machine Id:              2nl+feNEU9ulJtAynWAT6KeZHvY=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-camil" (connect: 0.00s, validation: 0.00s, handshake: 2.83s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-camil-notifications" at "2026-03-01T21:24:08.0826987Z"
-[Licensing::Module] Licensing Background thread has ended after 2.83s
-[Licensing::Module] Licensing is initialized (took 0.22s).
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
   Id: 20067552019256-UnityPersXXXX
   Product: Unity Personal
   Type: Assigned
   Expiration: Unlimited
-- Loaded All Assemblies, in  1.191 seconds
-Refreshing native plugins compatible for Editor in 1.78 ms, found 4 plugins.
+- Loaded All Assemblies, in  9.894 seconds
+Refreshing native plugins compatible for Editor in 3.11 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Package Manager log level set to [2]
@@ -175,872 +173,105 @@ Package Manager log level set to [2]
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.050 seconds
-Domain Reload Profiling: 2233ms
-	BeginReloadAssembly (429ms)
+- Finished resetting the current domain, in  1.513 seconds
+Domain Reload Profiling: 11394ms
+	BeginReloadAssembly (338ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (7ms)
+		DisableScriptedObjects (9ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (39ms)
-	RebuildCommonClasses (37ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (48ms)
-	LoadAllAssembliesAndSetupDomain (656ms)
-		LoadAssemblies (452ms)
+		CreateAndSetChildDomain (49ms)
+	RebuildCommonClasses (69ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (73ms)
+	LoadAllAssembliesAndSetupDomain (9382ms)
+		LoadAssemblies (9185ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (316ms)
-			TypeCache.Refresh (233ms)
-				TypeCache.ScanAssembly (216ms)
-			BuildScriptInfoCaches (68ms)
-			ResolveRequiredComponents (11ms)
-	FinalizeReload (1051ms)
+		AnalyzeDomain (394ms)
+			TypeCache.Refresh (269ms)
+				TypeCache.ScanAssembly (246ms)
+			BuildScriptInfoCaches (107ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (1513ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (892ms)
+		SetupLoadedEditorAssemblies (1308ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (2ms)
-			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (192ms)
-			ProcessInitializeOnLoadAttributes (544ms)
-			ProcessInitializeOnLoadMethodAttributes (140ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (268ms)
+			ProcessInitializeOnLoadAttributes (800ms)
+			ProcessInitializeOnLoadMethodAttributes (215ms)
+			AfterProcessingInitializeOnLoad (15ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (10ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 3.10 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6922 unused Assets / (5.1 MB). Loaded Objects now: 7739.
+Memory consumption went from 154.3 MB to 149.2 MB.
+Total: 14.735700 ms (FindLiveObjects: 1.186600 ms CreateObjectMapping: 1.066000 ms MarkObjects: 8.248300 ms  DeleteObjects: 4.233200 ms)
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.370 seconds
+Refreshing native plugins compatible for Editor in 3.26 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.268 seconds
+Domain Reload Profiling: 2633ms
+	BeginReloadAssembly (373ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (19ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (82ms)
+	RebuildCommonClasses (50ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (48ms)
+	LoadAllAssembliesAndSetupDomain (876ms)
+		LoadAssemblies (794ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (285ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (257ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (1269ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1029ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (254ms)
+			ProcessInitializeOnLoadAttributes (655ms)
+			ProcessInitializeOnLoadMethodAttributes (99ms)
 			AfterProcessingInitializeOnLoad (10ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (7ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
-Refreshing native plugins compatible for Editor in 2.79 ms, found 4 plugins.
+		AwakeInstancesAfterBackupRestoration (22ms)
+Refreshing native plugins compatible for Editor in 2.93 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6921 unused Assets / (4.8 MB). Loaded Objects now: 7739.
-Memory consumption went from 154.3 MB to 149.5 MB.
-Total: 13.684400 ms (FindLiveObjects: 0.971900 ms CreateObjectMapping: 1.236200 ms MarkObjects: 8.048800 ms  DeleteObjects: 3.426100 ms)
+Unloading 6920 unused Assets / (5.3 MB). Loaded Objects now: 7743.
+Memory consumption went from 154.7 MB to 149.5 MB.
+Total: 20.332000 ms (FindLiveObjects: 1.485700 ms CreateObjectMapping: 2.057800 ms MarkObjects: 11.955300 ms  DeleteObjects: 4.831000 ms)
 
+Prepare: number of updated asset objects reloaded= 0
 ========================================================================
 Received Import Request.
-  Time since last request: 14647.621033 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_365.asset
-  artifactKey: Guid(7994fa3a294d80a4e87cf36d6a7d8a64) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_365.asset using Guid(7994fa3a294d80a4e87cf36d6a7d8a64) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '96da7793a9e784959e000dc601afd2ce') in 0.129924 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_293.asset
-  artifactKey: Guid(7df63cc38d0a7e949b08b76a251110bb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_293.asset using Guid(7df63cc38d0a7e949b08b76a251110bb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'fb6eaefa60790cf9a495e15528371591') in 0.0325802 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_386.asset
-  artifactKey: Guid(11b2f9e3da6f4454c8f3c64d9ba5e80d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_386.asset using Guid(11b2f9e3da6f4454c8f3c64d9ba5e80d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a23997fd3b5249ee7335bfe778c978c3') in 0.0244669 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_86.asset
-  artifactKey: Guid(8c64d5022cf8caf4e8891d64a19c6fd4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_86.asset using Guid(8c64d5022cf8caf4e8891d64a19c6fd4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e2e83d669b345bbb8d27867b66278356') in 0.0207734 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_383.asset
-  artifactKey: Guid(afea373d65750a34e9016161e407eee7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_383.asset using Guid(afea373d65750a34e9016161e407eee7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '10c30648c0de8d8a61a1b4d8fbee3434') in 0.0217549 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_37.asset
-  artifactKey: Guid(db6972173a931cb4683d052f57c0128c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_37.asset using Guid(db6972173a931cb4683d052f57c0128c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3704769d8821895eccd28c8c7b18faaa') in 0.0230425 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_83.asset
-  artifactKey: Guid(25d2caa041330f640b444a59b991cc65) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_83.asset using Guid(25d2caa041330f640b444a59b991cc65) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'eb7af3d34158ae814447e48db5602e22') in 0.0226806 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_225.asset
-  artifactKey: Guid(205490f3f27bc2441b01db96481a6ebc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_225.asset using Guid(205490f3f27bc2441b01db96481a6ebc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '638ae42616e1d14d59e0c40c9e007392') in 0.024782 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_296.asset
-  artifactKey: Guid(08fff36501efea744afb2fe283e3df45) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_296.asset using Guid(08fff36501efea744afb2fe283e3df45) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5f9f3f7e79c3d52e2a1e3f1635d3443a') in 0.0255704 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_400.asset
-  artifactKey: Guid(b99cd41f67c57e84baa98f481ac63c00) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_400.asset using Guid(b99cd41f67c57e84baa98f481ac63c00) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd0af581255ca16a744fecf54271071f4') in 0.0265935 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_117.asset
-  artifactKey: Guid(8484403b952fc2342a72e739a733a2c3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_117.asset using Guid(8484403b952fc2342a72e739a733a2c3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3192f3019af02fa8f6dc5a3f2d0dda42') in 0.0243023 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_106.asset
-  artifactKey: Guid(7a126e59943fc454ba86cfc0bd3e4ab5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_106.asset using Guid(7a126e59943fc454ba86cfc0bd3e4ab5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd7b1e1e8150f1acb3b73997dabfab954') in 0.0301218 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_21.asset
-  artifactKey: Guid(70a66c430a793184cb5902923e8d2c59) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_21.asset using Guid(70a66c430a793184cb5902923e8d2c59) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '87ccdb0ac4f69e6f74509fa04b823771') in 0.0256728 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_16.asset
-  artifactKey: Guid(a0deff3037028da43913fee5efbf267a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_16.asset using Guid(a0deff3037028da43913fee5efbf267a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '04a751afd8a4c61cb610aca383534293') in 0.0248266 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_316.asset
-  artifactKey: Guid(d7e586ba4b73d59419b1ef608cb390ce) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_316.asset using Guid(d7e586ba4b73d59419b1ef608cb390ce) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c1e313aa9b050a33bf1219c14398fbe7') in 0.0252419 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000054 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_52.asset
-  artifactKey: Guid(3cfc76c8dd52f0e4ba3f643592a529e7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_52.asset using Guid(3cfc76c8dd52f0e4ba3f643592a529e7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '70f18a6a86b01588273b33ec315fe6ef') in 0.0333107 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_138.asset
-  artifactKey: Guid(c06d9afc4aa2fc44abf98d8cdfbc2b52) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_138.asset using Guid(c06d9afc4aa2fc44abf98d8cdfbc2b52) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bace84a6b9369c751448d59e0f7c0cfd') in 0.0323518 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_327.asset
-  artifactKey: Guid(10670e24cf035d44a9b0ca86fa4041d8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_327.asset using Guid(10670e24cf035d44a9b0ca86fa4041d8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '447d2633900dfbe54d9dc9c5394571ac') in 0.036616 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_337.asset
-  artifactKey: Guid(0175900da69af0846887089c3264456d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_337.asset using Guid(0175900da69af0846887089c3264456d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7438ee8490272095146619a3b4532b23') in 0.0284719 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_294.asset
-  artifactKey: Guid(6f25d5d10b36de943a1c16316754c95e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_294.asset using Guid(6f25d5d10b36de943a1c16316754c95e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9dcfda280ab6576a25b7ea076f5506a4') in 0.0271288 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_241.asset
-  artifactKey: Guid(29c09cb4484a720429c70289d8e1a806) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_241.asset using Guid(29c09cb4484a720429c70289d8e1a806) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5957bf23178e3e52f68035ab547c8f1d') in 0.034358 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_120.asset
-  artifactKey: Guid(0ea713198b6b40945a54bdf3fc6e4323) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_120.asset using Guid(0ea713198b6b40945a54bdf3fc6e4323) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a4b77fde05b788c5405d6752e8714a68') in 0.0291192 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000077 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_103.asset
-  artifactKey: Guid(b6425c9bdc02c404ca49612544c40273) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_103.asset using Guid(b6425c9bdc02c404ca49612544c40273) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3c3c2d1baa5e8dc6c1d454e7f942f0db') in 0.0335477 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_164.asset
-  artifactKey: Guid(a3164ebd7fc111948a1885c0158404fd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_164.asset using Guid(a3164ebd7fc111948a1885c0158404fd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd08a79236425f11fc5240623443d04a3') in 0.0279242 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_340.asset
-  artifactKey: Guid(a6f96b7abaf762f47b28d9572dec4eca) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_340.asset using Guid(a6f96b7abaf762f47b28d9572dec4eca) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '558e204b8664fc9bb638edea629e03c7') in 0.0270529 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_312.asset
-  artifactKey: Guid(33b2ea55b514cfe4da365b8609186cef) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_312.asset using Guid(33b2ea55b514cfe4da365b8609186cef) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd0637b534605a8b0199519d05ea5d9be') in 0.0286099 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_137.asset
-  artifactKey: Guid(91f51def8f5257d42a74b530a7380c4f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_137.asset using Guid(91f51def8f5257d42a74b530a7380c4f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3e5eb56229b7b09ea2f8ccea8a4b3933') in 0.0279575 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_170.asset
-  artifactKey: Guid(6de26914bad9e19479f4feab3192f406) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_170.asset using Guid(6de26914bad9e19479f4feab3192f406) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b871f2404200ba56b2ca3f2328262df2') in 0.0292149 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_376.asset
-  artifactKey: Guid(abc8bfd8590b1454897a2c00adc00516) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_376.asset using Guid(abc8bfd8590b1454897a2c00adc00516) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '717aa7c5a154206cfed0b8ee5aa8c83b') in 0.0255977 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_255.asset
-  artifactKey: Guid(79ea5b25476338e49bd5e0782822ba23) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_255.asset using Guid(79ea5b25476338e49bd5e0782822ba23) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ca0e7f95d741e34c2e0e32f7edfb8259') in 0.0266352 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_116.asset
-  artifactKey: Guid(7a67630e165f2894baa4e7bf71a48c4b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_116.asset using Guid(7a67630e165f2894baa4e7bf71a48c4b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b7743c08f46cf96a13e8cc886ab2d601') in 0.0244131 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_46.asset
-  artifactKey: Guid(31add41ea3fcac546a81ea7e99130e97) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_46.asset using Guid(31add41ea3fcac546a81ea7e99130e97) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2dd76e41a2f8ddb6c8480927f947a0b1') in 0.0291406 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_300.asset
-  artifactKey: Guid(1a36d2b8bcf55e04396070c79a1f7a98) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_300.asset using Guid(1a36d2b8bcf55e04396070c79a1f7a98) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'fbfaf7a6c9a744429264beb45d1bd3ff') in 0.0330325 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000124 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_72.asset
-  artifactKey: Guid(c69bd699877a6b2489835a146f842d6f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_72.asset using Guid(c69bd699877a6b2489835a146f842d6f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a394fb7b8413c0c3e6577c297b447471') in 0.0315432 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_94.asset
-  artifactKey: Guid(9fc0ac321c4eadd488763ac2f89ef12e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_94.asset using Guid(9fc0ac321c4eadd488763ac2f89ef12e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1499be72fa62caa05b3e0da78f9614ee') in 0.0297898 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_29.asset
-  artifactKey: Guid(3e9343819a17fb548ab0e23eb0108798) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_29.asset using Guid(3e9343819a17fb548ab0e23eb0108798) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3fb356d9bbecbee09fc2ba2c964a5205') in 0.034484 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_44.asset
-  artifactKey: Guid(2d6d9da518b167346bf01828d1285a44) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_44.asset using Guid(2d6d9da518b167346bf01828d1285a44) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '621213495c9798c1ab6ddba039783f5c') in 0.0322415 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_27.asset
-  artifactKey: Guid(f21603e9ec8ff064e808c9eea40b2850) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_27.asset using Guid(f21603e9ec8ff064e808c9eea40b2850) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b1b510fc91e39d113abd432c6a31ac91') in 0.0353721 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_249.asset
-  artifactKey: Guid(213cb71b6ccff94479755917c34fb636) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_249.asset using Guid(213cb71b6ccff94479755917c34fb636) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1d5ec05c3add2243c89354b812cb8503') in 0.0353649 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_33.asset
-  artifactKey: Guid(17a51015362516344a557d5d179bc35b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_33.asset using Guid(17a51015362516344a557d5d179bc35b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3384d7b8ecaf87c3110e55b10201c008') in 0.0564573 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_161.asset
-  artifactKey: Guid(fdb17764ad844ed45a973d0d6082e060) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_161.asset using Guid(fdb17764ad844ed45a973d0d6082e060) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '06677ffb18524ad62cb99a3b50a74ec1') in 0.0638639 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_250.asset
-  artifactKey: Guid(55ed830587975c8458414b749793f81f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_250.asset using Guid(55ed830587975c8458414b749793f81f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'aecc49086917a31636ae08b42739c198') in 0.0301125 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_77.asset
-  artifactKey: Guid(ab569c59fbb467740837f6fb0d8f00a5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_77.asset using Guid(ab569c59fbb467740837f6fb0d8f00a5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a1a23ce9a38db3a023c7387b045ffbd0') in 0.0377801 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_47.asset
-  artifactKey: Guid(2229d2c2303d64b4bad6ee928ce5c294) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_47.asset using Guid(2229d2c2303d64b4bad6ee928ce5c294) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f6db1d0649f3104a35cd4e41d92242d5') in 0.0368678 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_233.asset
-  artifactKey: Guid(8e98a391d6c8e7f4fa7c3fef71b78231) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_233.asset using Guid(8e98a391d6c8e7f4fa7c3fef71b78231) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e045b02619748089c8d280a642bb8584') in 0.0313043 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_261.asset
-  artifactKey: Guid(9b14f1b6f5e14fc4ea7b542e0e7eab1e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_261.asset using Guid(9b14f1b6f5e14fc4ea7b542e0e7eab1e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3d5f26f266d878ce941118d4ed333cb8') in 0.0296227 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_380.asset
-  artifactKey: Guid(b4e4e45aad1cf1a439dc2a0772f709aa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_380.asset using Guid(b4e4e45aad1cf1a439dc2a0772f709aa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd21095d232418fbec0ca400c4f70af2e') in 0.0305794 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_356.asset
-  artifactKey: Guid(d81fa87f4d8495e47b063d5447a31c90) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_356.asset using Guid(d81fa87f4d8495e47b063d5447a31c90) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '40ba455cb727086663954acf9df9abf6') in 0.0449444 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000095 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_10.asset
-  artifactKey: Guid(7e58ddfbd91df1b44b348ff7107e880c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_10.asset using Guid(7e58ddfbd91df1b44b348ff7107e880c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e60871ee45f11df8ea7be93d999f9195') in 0.0292634 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_384.asset
-  artifactKey: Guid(ddc7090b798dd5b419fccacddcab826f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_384.asset using Guid(ddc7090b798dd5b419fccacddcab826f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f541d315951a4da119f4429a81f9b6c1') in 0.0391194 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_154.asset
-  artifactKey: Guid(aba9ada263e9aff488097e1bdcf41dc7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_154.asset using Guid(aba9ada263e9aff488097e1bdcf41dc7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '629046fe5c2ee85dfc006e563de59289') in 0.029799 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_71.asset
-  artifactKey: Guid(9c71cf9c7d97b714ab7c4af85914f63c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_71.asset using Guid(9c71cf9c7d97b714ab7c4af85914f63c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f8de75e169528355a642b08edbf2a72f') in 0.0349974 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_207.asset
-  artifactKey: Guid(ffdde21054f787847ace3d3678ca4ac5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_207.asset using Guid(ffdde21054f787847ace3d3678ca4ac5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ada0773d9c470c2bf544372d7ee7bdca') in 0.0325343 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_182.asset
-  artifactKey: Guid(98bab77d6723baa4d9cc76a4ac53a6ae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_182.asset using Guid(98bab77d6723baa4d9cc76a4ac53a6ae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7ecfe58e86c8ce30e312d5a9f9d4ef34') in 0.0311855 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_218.asset
-  artifactKey: Guid(e530ab0fb9bb11f4aa19c61cac756e3f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_218.asset using Guid(e530ab0fb9bb11f4aa19c61cac756e3f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5b457a71a2da06c93fa48d1601ebb256') in 0.0329844 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_276.asset
-  artifactKey: Guid(d3beeee8876eabc45aef0f127b6855e0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_276.asset using Guid(d3beeee8876eabc45aef0f127b6855e0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '954cebb6ee9bd051daa9fe02e7bdfc67') in 0.0345537 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_190.asset
-  artifactKey: Guid(cdaa16bccc3ea3846aa7aa799db79028) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_190.asset using Guid(cdaa16bccc3ea3846aa7aa799db79028) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6330358510d600bc3f7b175c2b1daf78') in 0.0538366 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000142 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_203.asset
-  artifactKey: Guid(e6254627ee52fae488abb6d922648000) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_203.asset using Guid(e6254627ee52fae488abb6d922648000) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '04a08c03c9f5bfef22172432c5748568') in 0.0433981 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000054 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_275.asset
-  artifactKey: Guid(d7a3bfa189a8fce48942175b9d2aea0b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_275.asset using Guid(d7a3bfa189a8fce48942175b9d2aea0b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9c926d7ffe191daa77b265dc0ea32f0d') in 0.037267 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_53.asset
-  artifactKey: Guid(44b14b183bc4100499aa943c84bfadbd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_53.asset using Guid(44b14b183bc4100499aa943c84bfadbd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a361500b6ca4d3609f4c1b94799cce5f') in 0.0348789 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_390.asset
-  artifactKey: Guid(446a4b272f5fdd542820bd7f4a0dd247) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_390.asset using Guid(446a4b272f5fdd542820bd7f4a0dd247) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b0e4e205ad36da79b934373b747a3d4c') in 0.0303154 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_45.asset
-  artifactKey: Guid(bd09ee86380a04648a0e0cff84092ef8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_45.asset using Guid(bd09ee86380a04648a0e0cff84092ef8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f6b358c378d0b21638c8d8ec53eafd97') in 0.0353852 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_274.asset
-  artifactKey: Guid(39c08a5e7ff3b4947bf6f4d96a53365a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_274.asset using Guid(39c08a5e7ff3b4947bf6f4d96a53365a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'af0c5734d599fbf6d32d1e5658f54ec5') in 0.0326141 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_348.asset
-  artifactKey: Guid(ca49e6ff05d9f9440b8ff208058a507f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_348.asset using Guid(ca49e6ff05d9f9440b8ff208058a507f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ddbae88e6ccf324e547d7e1d460abbe3') in 0.0319247 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_304.asset
-  artifactKey: Guid(8891ddd25bc1a6542b11770c399d51c9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_304.asset using Guid(8891ddd25bc1a6542b11770c399d51c9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '010a848a4deafd8198fde6157ed83050') in 0.0315555 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_219.asset
-  artifactKey: Guid(f8aed668c22348a4ea288f2825051c67) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_219.asset using Guid(f8aed668c22348a4ea288f2825051c67) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b629989cf20bec60068f710cfab1f2dd') in 0.0292209 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_126.asset
-  artifactKey: Guid(8d7f0cb6a4188c54e8466fdbc9c5444a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_126.asset using Guid(8d7f0cb6a4188c54e8466fdbc9c5444a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f5995b9dedb367b77d1329b8dfaba33a') in 0.033049 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_183.asset
-  artifactKey: Guid(1b80670644baa7640a4c5008bf37f135) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_183.asset using Guid(1b80670644baa7640a4c5008bf37f135) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e798d0903b59635f16c78b31ed8b989c') in 0.031977 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_55.asset
-  artifactKey: Guid(9363e1361b4036e45b20f858221bb31f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_55.asset using Guid(9363e1361b4036e45b20f858221bb31f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8cf5b062864499d1495b9364132ea11f') in 0.0317924 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_287.asset
-  artifactKey: Guid(a2bf154b682bd7043b5daa71e3517609) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_287.asset using Guid(a2bf154b682bd7043b5daa71e3517609) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a3d11ca7bef5f7e3a66afc8fa54a0da3') in 0.1527394 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000186 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_92.asset
-  artifactKey: Guid(8bcb3d70f894d9b4a874726a167ca78b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_92.asset using Guid(8bcb3d70f894d9b4a874726a167ca78b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9e573fb74542baa16ad1bd4e8893230d') in 0.0535463 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000054 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_148.asset
-  artifactKey: Guid(8b35f04114fcac74bb4cbb9a7bb41f81) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_148.asset using Guid(8b35f04114fcac74bb4cbb9a7bb41f81) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c69fb47a14b25d2b647223d1d84e0874') in 0.0527523 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_382.asset
-  artifactKey: Guid(60f87b027a5b8fb4aaded26443f7e209) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_382.asset using Guid(60f87b027a5b8fb4aaded26443f7e209) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4c9bf220d8ee32ea0c292755b3e453ae') in 0.0508101 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_143.asset
-  artifactKey: Guid(5acc60b9a2c3f904ea044f3644eb7d25) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_143.asset using Guid(5acc60b9a2c3f904ea044f3644eb7d25) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '22116527757d2b5da51b7c12011a6d4b') in 0.0404138 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000111 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_64.asset
-  artifactKey: Guid(cce072c1fbd352247865878c7f4434f9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_64.asset using Guid(cce072c1fbd352247865878c7f4434f9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1e77871c2863f40fa8b275d18783cdfb') in 0.0420486 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_151.asset
-  artifactKey: Guid(ad6717c155c9a0048bd73e0aec075d15) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_151.asset using Guid(ad6717c155c9a0048bd73e0aec075d15) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6b481af7be58cc1a19cd8cb0a11ac5ca') in 0.0396835 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_246.asset
-  artifactKey: Guid(63ea67440eb23c048b208770da4b0a4c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_246.asset using Guid(63ea67440eb23c048b208770da4b0a4c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2d2e2a6f14d9249aa3bd5a20f1bc3607') in 0.0375402 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000058 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_23.asset
-  artifactKey: Guid(5a67574059ad8db448e641036221de4d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_23.asset using Guid(5a67574059ad8db448e641036221de4d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b0e30ff9ae8a7ae9039978a8450ed0f6') in 0.0403112 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_192.asset
-  artifactKey: Guid(7c29a841eb8479f4aa56b706c0ed3ff8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_192.asset using Guid(7c29a841eb8479f4aa56b706c0ed3ff8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2fd29e48153f9a593edf1b27cc4950d9') in 0.0375731 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Code/PlayerHealth.cs
-  artifactKey: Guid(037a7fc981c13ff49b074ab15fa15726) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Code/PlayerHealth.cs using Guid(037a7fc981c13ff49b074ab15fa15726) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '29b09b9b35ca17509d74533adc474a41') in 0.0375151 seconds
+  Time since last request: 18004.701782 seconds.
+  path: Assets/Scenes/Level01.unity
+  artifactKey: Guid(8c9cfa26abfee488c85f1582747f6a02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level01.unity using Guid(8c9cfa26abfee488c85f1582747f6a02) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '370eff322dbe3e8861da4d5d47b24cac') in 0.0138635 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000145 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_353.asset
-  artifactKey: Guid(0484b5ff0fb5b9a46916ea8e42ca7455) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_353.asset using Guid(0484b5ff0fb5b9a46916ea8e42ca7455) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ee350e78d285095c0945dde0fb4a3394') in 0.0577793 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_252.asset
-  artifactKey: Guid(d0b85c0b942c4974f8e09441b2fb892e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_252.asset using Guid(d0b85c0b942c4974f8e09441b2fb892e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c9bae8cb06e209b157ed97e4c73a0825') in 0.0479395 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001333 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_338.asset
-  artifactKey: Guid(9cebe48d96abb834993c15148f3b6caa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_338.asset using Guid(9cebe48d96abb834993c15148f3b6caa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b86bcd76e9e0ed4b1aaab6f5e0f38d27') in 0.0450494 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000133 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_224.asset
-  artifactKey: Guid(e21f88dcd16a2ab4fb626a34d7c21ce1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_224.asset using Guid(e21f88dcd16a2ab4fb626a34d7c21ce1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a6f02a8e7958cf133fb180e9699e95fb') in 0.0809482 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000079 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_361.asset
-  artifactKey: Guid(6de5bdd032f7f8949ba0cc543ffe910e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_361.asset using Guid(6de5bdd032f7f8949ba0cc543ffe910e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd95c5635488c9cdc9c5723d2fd855f85') in 0.0525701 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_392.asset
-  artifactKey: Guid(f62a952327967ef4799f20a86e433dee) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_392.asset using Guid(f62a952327967ef4799f20a86e433dee) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a8d8ac3d8f6d10c39d89e88efdb398f5') in 0.0752292 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000111 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_204.asset
-  artifactKey: Guid(bd1443e0e0c6a644fab841eb3f08f2d6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_204.asset using Guid(bd1443e0e0c6a644fab841eb3f08f2d6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '121bf13211900957afa3e88ea0570782') in 0.0579607 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000138 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_335.asset
-  artifactKey: Guid(934e2452e4eb35b40b273ac9881615e6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_335.asset using Guid(934e2452e4eb35b40b273ac9881615e6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '026bbbd338340f1490c6179896888ed7') in 0.0588134 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000082 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_290.asset
-  artifactKey: Guid(17992d41676779747b3ef8377d506a7f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_290.asset using Guid(17992d41676779747b3ef8377d506a7f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6deff3ae2f49aa4e9d13e6658c0920f6') in 0.0621116 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_142.asset
-  artifactKey: Guid(a5bdeba9692608944b2228ed12ef790c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_142.asset using Guid(a5bdeba9692608944b2228ed12ef790c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5e35f46b380f79a99e7a3d1dafbee9c2') in 0.0417379 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_4.asset
-  artifactKey: Guid(dd5eb29ab88c7c748b422e5752b67c22) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_4.asset using Guid(dd5eb29ab88c7c748b422e5752b67c22) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e5379ded4e868fc8637fc121eb4ec566') in 0.0491138 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_307.asset
-  artifactKey: Guid(defb530a64155c14e84531ea083c2a63) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_307.asset using Guid(defb530a64155c14e84531ea083c2a63) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e1a326f6b8632604c536b57bccc7d128') in 0.0269193 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_158.asset
-  artifactKey: Guid(713459a412d686748815760d70fa942e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_158.asset using Guid(713459a412d686748815760d70fa942e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8c0c5bcc22d1c7b70e83237980ee44b6') in 0.0488733 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000085 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_176.asset
-  artifactKey: Guid(830f89fbaa8f18a4cb70ab30f0106a90) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_176.asset using Guid(830f89fbaa8f18a4cb70ab30f0106a90) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a88d09fd60b304994bcbf274527edc14') in 0.0518289 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_299.asset
-  artifactKey: Guid(d656c0342740ae24491ed99e4c8aee44) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_299.asset using Guid(d656c0342740ae24491ed99e4c8aee44) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f710ef5842c47b78b10c6d6febb5c334') in 0.0902141 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_285.asset
-  artifactKey: Guid(05358c93d8f98b44e91f16aaff4f970d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_285.asset using Guid(05358c93d8f98b44e91f16aaff4f970d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5169fc15bdceaf758eac3dbd03b23e47') in 0.0442599 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000046 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_211.asset
-  artifactKey: Guid(74660e8780ee07e40b8cd7682aa8ebb5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_211.asset using Guid(74660e8780ee07e40b8cd7682aa8ebb5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '257fd85eb4092cb41cb7172e3f231778') in 0.0363034 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Scenes/Level02.unity
-  artifactKey: Guid(46c7f347291e1274aa00086486700fbf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/Level02.unity using Guid(46c7f347291e1274aa00086486700fbf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cfadcb476d6c33a6ef94ee456a9535d6') in 0.0271894 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000069 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_75.asset
-  artifactKey: Guid(39135364642506142bc494729a86dba3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_75.asset using Guid(39135364642506142bc494729a86dba3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0ce9c4c263fead053c81e10f74c686c8') in 0.0345273 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000060 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_317.asset
-  artifactKey: Guid(8a1c77fefa4c87748b8470e915b330b4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_317.asset using Guid(8a1c77fefa4c87748b8470e915b330b4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3a05d48ef093df2c33a1a0b854968c92') in 0.033332 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_81.asset
-  artifactKey: Guid(1cf24c4a6ccfc604bb21e202a0384e29) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_81.asset using Guid(1cf24c4a6ccfc604bb21e202a0384e29) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6da76a275743f49837ff4df7ee5d5e57') in 0.0608275 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_93.asset
-  artifactKey: Guid(49d61d33e6bcf6e439e41c9b1fc23012) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_93.asset using Guid(49d61d33e6bcf6e439e41c9b1fc23012) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b98c1d29f22f6f21b0215f6c9ad2ca6d') in 0.0365036 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000071 seconds.
-  path: Assets/Tiles/generic_platformer_tiles_184.asset
-  artifactKey: Guid(70bd65660a7ca754184a1fcafa9f2d1b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Tiles/generic_platformer_tiles_184.asset using Guid(70bd65660a7ca754184a1fcafa9f2d1b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7a708b2dcd25fbedf47815ed12262788') in 0.0391473 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
