@@ -20,7 +20,7 @@ public class PlayerHealth : MonoBehaviour
         {
             Debug.LogWarning("Il y a plusieurs instance de PlayerHealth");
         }
-        instance = this; //Accedez à l'inventaire de n'importe où
+        instance = this; 
     }
     void Start()
     {
@@ -55,12 +55,30 @@ public class PlayerHealth : MonoBehaviour
         {
             currentHealth -= damage;
             healthBar.SetHealth(currentHealth);   //Actualise les pv
+
+            if(currentHealth <= 0) //Verifie si le joueur est toujours en vie
+            {
+                Die();
+                return;
+            }
+
             isInvicible = true;
             StartCoroutine(IncivibilityFlash());
             StartCoroutine(HandleInvicibilityDelay());
 
         }
         
+    }
+
+    public void Die()
+    {
+        //Bloquer mouvement player
+        PlayerMovement.instance.enabled = false;
+        //Jouer animation de mort
+        PlayerMovement.instance.animator.SetTrigger("Death");
+        //Empecher interactions physiques avec autres élements
+        PlayerMovement.instance.rb.bodyType = RigidbodyType2D.Kinematic;
+        PlayerMovement.instance.playerCollider.enabled = false;
     }
 
     public IEnumerator IncivibilityFlash()

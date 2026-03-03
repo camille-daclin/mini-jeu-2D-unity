@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D rb;
     public Animator animator;
     public SpriteRenderer spriteRenderer;
+    public CapsuleCollider2D playerCollider;
     public float jumpForce;
 
     private bool isJumping;
@@ -21,6 +22,16 @@ public class PlayerMovement : MonoBehaviour
     private float horizontalMovement;
     private float verticalMovement;
 
+    public static PlayerMovement instance;
+
+    private void Awake()
+    {
+        if (instance != null)
+        {
+            Debug.LogWarning("Il y a plusieurs instance de PlayerMovement");
+        }
+        instance = this; 
+    }
 
     void Update()
     {

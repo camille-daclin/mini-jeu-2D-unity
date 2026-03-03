@@ -42909,6 +42909,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1901036506245110777, guid: a3a43883487567d4d93ac26cf128db4c, type: 3}
   m_PrefabInstance: {fileID: 8591428808123766643}
   m_PrefabAsset: {fileID: 0}
+--- !u!70 &1731972996 stripped
+CapsuleCollider2D:
+  m_CorrespondingSourceObject: {fileID: 4174855055212677519, guid: a3a43883487567d4d93ac26cf128db4c, type: 3}
+  m_PrefabInstance: {fileID: 8591428808123766643}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1765139754
 GameObject:
   m_ObjectHideFlags: 0
@@ -43398,11 +43403,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4862365383229324381, guid: 99585a2b01bb22b4696b86a4100013c7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.6043
+      value: -5.46
       objectReference: {fileID: 0}
     - target: {fileID: 4862365383229324381, guid: 99585a2b01bb22b4696b86a4100013c7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.4505
+      value: 2.43
       objectReference: {fileID: 0}
     - target: {fileID: 4862365383229324381, guid: 99585a2b01bb22b4696b86a4100013c7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -43522,6 +43527,10 @@ PrefabInstance:
       propertyPath: climbSpeed
       value: 1000
       objectReference: {fileID: 0}
+    - target: {fileID: 6351488851518262758, guid: a3a43883487567d4d93ac26cf128db4c, type: 3}
+      propertyPath: playerCollider
+      value: 
+      objectReference: {fileID: 1731972996}
     - target: {fileID: 8919105562856471173, guid: a3a43883487567d4d93ac26cf128db4c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -11.01
