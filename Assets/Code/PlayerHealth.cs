@@ -12,6 +12,16 @@ public class PlayerHealth : MonoBehaviour
     public bool isInvicible = false;
     public SpriteRenderer graphics;
     public BarreDeVie healthBar; 
+    public static PlayerHealth instance;
+
+    private void Awake()
+    {
+        if (instance != null)
+        {
+            Debug.LogWarning("Il y a plusieurs instance de PlayerHealth");
+        }
+        instance = this; //Accedez à l'inventaire de n'importe où
+    }
     void Start()
     {
         currentHealth = maxHealth;
@@ -24,6 +34,19 @@ public class PlayerHealth : MonoBehaviour
         {
             TakeDamage(20);
         }
+    }
+
+    public void HealPlayer(int amount)
+    {
+        if((currentHealth + amount) > maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
+        else
+        {
+            currentHealth += amount;
+        }
+        healthBar.SetHealth(currentHealth);
     }
 
     public void TakeDamage (int damage) //Test pour voir quand on prend des dégats
