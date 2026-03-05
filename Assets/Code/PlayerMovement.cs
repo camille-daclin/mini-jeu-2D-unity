@@ -35,10 +35,10 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        horizontalMovement = Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;
-        verticalMovement = Input.GetAxis("Vertical") * climbSpeed * Time.deltaTime; //On récupère le mouvement vertical
+        horizontalMovement = Input.GetAxis("Horizontal") * moveSpeed * Time.fixedDeltaTime;
+        verticalMovement = Input.GetAxis("Vertical") * climbSpeed * Time.fixedDeltaTime; //On récupère le mouvement vertical
 
-        if (Input.GetButtonDown("Jump") && estSol)
+        if (Input.GetButtonDown("Jump") && estSol && !isClimbing)
         {
             isJumping = true;
         }

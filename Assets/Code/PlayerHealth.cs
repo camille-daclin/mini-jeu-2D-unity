@@ -79,6 +79,18 @@ public class PlayerHealth : MonoBehaviour
         //Empecher interactions physiques avec autres élements
         PlayerMovement.instance.rb.bodyType = RigidbodyType2D.Kinematic;
         PlayerMovement.instance.playerCollider.enabled = false;
+        //Active menu de GameOver
+        GameOverManager.instance.OnPlayerDeath();
+    }
+
+    public void Respawn()
+    {
+        PlayerMovement.instance.enabled = true; //reactive deplacement player
+        PlayerMovement.instance.animator.SetTrigger("Respawn");
+        PlayerMovement.instance.rb.bodyType = RigidbodyType2D.Dynamic; //Réactive interactions physiques avec autres élements
+        PlayerMovement.instance.playerCollider.enabled = true;
+        currentHealth = maxHealth;
+        healthBar.SetHealth(currentHealth);
     }
 
     public IEnumerator IncivibilityFlash()
