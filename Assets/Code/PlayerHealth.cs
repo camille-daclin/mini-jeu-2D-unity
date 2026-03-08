@@ -78,6 +78,7 @@ public class PlayerHealth : MonoBehaviour
         PlayerMovement.instance.animator.SetTrigger("Death");
         //Empecher interactions physiques avec autres élements
         PlayerMovement.instance.rb.bodyType = RigidbodyType2D.Kinematic;
+        PlayerMovement.instance.rb.linearVelocity = Vector3.zero;  //Met la vitesse à zéro, on coupe le déplacement
         PlayerMovement.instance.playerCollider.enabled = false;
         //Active menu de GameOver
         GameOverManager.instance.OnPlayerDeath();
