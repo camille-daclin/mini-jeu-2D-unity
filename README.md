@@ -67,3 +67,4 @@ Assets/
 
 **Camille Daclin** – Étudiante en Licence 3 Informatique, Université Lyon 1  
 [github.com/camille-daclin](https://github.com/camille-daclin)
+**Enzo Gayon** - Étudiant en Licence 3 Informatique, Université Lyon 1
