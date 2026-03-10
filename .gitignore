@@ -1,10 +1,26 @@
+# Dossiers générés par Unity
 [Ll]ibrary/
 [Tt]emp/
 [Oo]bj/
 [Bb]uild/
 [Bb]uilds/
-UserSettings/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+
+# Fichiers Visual Studio
 *.csproj
+*.unityproj
 *.sln
+*.suo
 *.user
 *.userprefs
+*.pidb
+*.booproj
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Zone Identifier Windows
+*.Zone.Identifier
+*:Zone.Identifier
